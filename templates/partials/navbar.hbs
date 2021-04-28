@@ -1,0 +1,43 @@
+
+<style>
+#navbar{
+    padding: 23px 22px;
+    font-size: 1.5rem;
+    height: 35px;
+    width: 100%;
+}
+#navbar::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    height: 72px;
+    opacity: 50%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+ul {
+    display: flex;
+   
+}
+        ul li{
+            text-decoration: none;
+            list-style: none;
+        }
+        ul li a{
+            text-decoration: none;
+            list-style: none;
+            padding: 20px 20px;
+            color: white;
+        }
+</style>
+
+<nav id="navbar">
+    <ul>
+        <li class="list"><a href="/">Home</a></li>
+        <li class="list"><a href="/about">About</a></li>
+        <li class="list"><a href="/help">Help</a></li>
+        <li class="list"><a href="/weather">Weather</a></li>
+    </ul>
+</nav>
