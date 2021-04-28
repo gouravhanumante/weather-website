@@ -63,7 +63,8 @@ app.get('/weather', (req, res) =>  {
             }
             res.send({
                 forecast: forecastData,
-                location: place_name
+                location: place_name,
+                windspeed:windspeed
             })
             // res.send('In')
             // res.send(location)

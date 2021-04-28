@@ -9,7 +9,8 @@ const forecast = (latitude, longitude, callback) => {
       // const {
         success=body.success,
         temperature=body.current.temperature,
-        feelslike=body.current.feelslike
+        feelslike=body.current.feelslike,
+        windspeed=body.current.wind_speed
       // } = response
 
          
@@ -24,7 +25,7 @@ const forecast = (latitude, longitude, callback) => {
       else {
         // temperature = response.body.current.temperature
         // feelslike = response.body.current.feelslike
-        callback(undefined, "It is currently " + temperature + ' degrees out. It feels like ' + feelslike + ' degrees out.')
+        callback(undefined, "It is currently " + temperature + ' degrees out. It feels like ' + feelslike + ' degrees out.And the wind speed is '+windspeed)
       }
     })
   }
